@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jonas Johansson — MLOps Portfolio</title>
+  <meta name="description"
+    content="MLOps Engineer student in Stockholm. Explore my personal ML projects and get in touch about an internship in spring 2027.">
+  <meta name="theme-color" content="#0b1120">
+  <meta property="og:title" content="Jonas Johansson — MLOps Portfolio">
+  <meta property="og:description"
+    content="MLOps Engineer student in Stockholm. Explore my personal ML projects and get in touch about an internship in spring 2027.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap"><a class="brand" href="#home" aria-label="Jonas Johansson — home"><span
+          class="monogram" aria-hidden="true">JJ.</span>JONAS JOHANSSON</a><button class="menu-toggle" type="button"
+        aria-expanded="false" aria-controls="navigation">Menu</button>
+      <nav class="nav-links" id="navigation" aria-label="Main navigation"><a href="#projects">Projects</a><a
+          href="#about">About</a><a href="#tools">Tools</a><a href="#contact">Contact</a><a class="nav-cv"
+          href="assets/documents/jonas-johansson-cv.pdf" download>Download CV ↓</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="container" id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Available for LIA · Spring 2027</div>
+          <h1 id="hero-title">Hi, I'm Jonas.<br>I build <span>ML systems,</span><br>not just models.</h1>
+          <p class="hero-intro"><strong>MLOps Engineer student at Nackademin.</strong><br>I enjoy the engineering around
+            the model — from training and experiment tracking to deployment and monitoring.</p>
+          <div class="actions"><a class="button button-primary" href="#projects">Explore my work <span
+                aria-hidden="true">↗</span></a><a class="button" href="#contact">Let's connect</a></div>
+          <div class="social-links"><a href="https://github.com/BigLurch" target="_blank"
+              rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/jonas-johansson-1516921b8/"
+              target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+        </div>
+        <div class="hero-art">
+          <div class="portrait-slot image-slot" data-image="assets/images/hero-portrait.webp"
+            data-alt="Portrait of Jonas Johansson">
+            <div class="portrait-fallback fallback"><strong>JJ.</strong><small>Portrait coming soon</small></div>
+          </div>
+          <div class="float-label top"><strong>Beyond the notebook</strong>Data · Models · Systems</div>
+          <div class="float-label bottom"><strong><span class="status-dot" aria-hidden="true"></span>Learning by
+              building</strong>MLOps · ML Engineering</div>
+        </div>
+      </section>
+      <div class="hero-meta">
+        <div><small>Based in</small><strong>Stockholm, Sweden</strong></div>
+        <div><small>Currently studying</small><strong>MLOps Engineer · Nackademin</strong></div>
+        <div><small>Internship period</small><strong>08 Feb — 21 May 2027</strong></div>
+      </div>
+    </div>
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div><span class="section-kicker">01 / Selected work</span>
+          <h2 id="projects-title">The model is only<br>the beginning.</h2>
+        </div>
+        <p>Independent projects and collaborations with classmates — exploring ML delivery, LLMOps and edge computing.
+        </p>
+      </div>
+      <div class="project-scroll-toolbar">
+        <p class="project-scroll-hint" id="project-scroll-hint">4 projects · Swipe or scroll to explore</p>
+        <div class="project-scroll-controls" hidden><button type="button" class="project-scroll-button"
+            data-project-direction="previous" aria-label="Previous projects"
+            aria-controls="project-track">←</button><button type="button" class="project-scroll-button"
+            data-project-direction="next" aria-label="Next projects" aria-controls="project-track">→</button></div>
+      </div>
+      <div class="projects-grid project-track" id="project-track" tabindex="0" role="region"
+        aria-labelledby="projects-title" aria-describedby="project-scroll-hint">
+        <article class="project-card"><a class="project-image screenshot-frame" href="assets/images/churn-demo.png"
+            target="_blank" rel="noopener noreferrer" aria-label="Open Churn Predictor screenshot in full size"><img
+              src="assets/images/churn-demo.png"
+              alt="Customer Churn Predictor interface with sample customer generation and batch prediction controls."
+              width="1164" height="781" loading="lazy" decoding="async"><span class="screenshot-hint"
+              aria-hidden="true">View screenshot ↗</span></a>
+          <div class="project-info">
+            <div class="project-topline"><span>01 / End-to-end ML delivery</span><span>Personal project</span></div>
+            <h3>Customer Churn Predictor</h3>
+            <p>From data preparation to a deployed web application. A complete ML workflow with experiment tracking,
+              batch predictions and a custom interface.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span
+                class="tag">MLflow</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span></div>
+            <div class="card-links"><a class="text-link" href="projects/churn-predictor.html">Read case study <span
+                  aria-hidden="true">↗</span></a><a href="https://github.com/BigLurch/churn-predictor" target="_blank"
+                rel="noopener noreferrer" aria-label="View Customer Churn Predictor source on GitHub">Source code ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card"><a class="project-image screenshot-frame" href="assets/images/fraud-dashboard.png"
+            target="_blank" rel="noopener noreferrer" aria-label="Open Fraud Detection screenshot in full size"><img
+              src="assets/images/fraud-dashboard.png"
+              alt="Fraud Detection dashboard showing summary metrics, a transaction origin map and recent prediction logs."
+              width="1762" height="877" loading="lazy" decoding="async"><span class="screenshot-hint"
+              aria-hidden="true">View screenshot ↗</span></a>
+          <div class="project-info">
+            <div class="project-topline"><span>02 / Monitoring & system design</span><span>Personal project</span></div>
+            <h3>Fraud Detection Platform</h3>
+            <p>A production-style platform with separate API, dashboard and simulator services. Built to explore
+              prediction logging, synthetic traffic and data drift.</p>
+            <div class="tags"><span class="tag">FastAPI</span><span class="tag">Streamlit</span><span
+                class="tag">Evidently</span><span class="tag">PostgreSQL</span><span class="tag">Docker Compose</span>
+            </div>
+            <div class="card-links"><a class="text-link" href="projects/fraud-detection.html">Read case study <span
+                  aria-hidden="true">↗</span></a><a href="https://github.com/BigLurch/fraud_detection_platform"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="View Fraud Detection Platform source on GitHub">Source code ↗</a></div>
+          </div>
+        </article>
+        <article class="project-card"><a class="project-image screenshot-frame"
+            href="assets/images/nordic-travel-chatbot.png" target="_blank" rel="noopener noreferrer"
+            aria-label="Open Nordic Travel Chatbot screenshot in full size"><img
+              src="assets/images/nordic-travel-chatbot.png"
+              alt="Nordic Travel Chatbot Streamlit interface with country, city, trip length and budget controls."
+              width="3572" height="1960" loading="lazy" decoding="async"><span class="screenshot-hint"
+              aria-hidden="true">View screenshot ↗</span></a>
+          <div class="project-info">
+            <div class="project-topline"><span>03 / LLMOps</span><span>Team project</span></div>
+            <h3>Nordic Travel Chatbot</h3>
+            <p>A travel assistant built with classmates, combining curated Nordic travel data, a Pydantic-AI agent,
+              FastAPI, Streamlit and MLflow prompt registration and evaluation scripts.</p>
+            <div class="tags"><span class="tag">Pydantic-AI</span><span class="tag">FastAPI</span><span
+                class="tag">Streamlit</span><span class="tag">MLflow</span><span class="tag">Docker</span></div>
+            <div class="card-links"><a class="text-link" href="projects/nordic-travel-chatbot.html">Read case study
+                ↗</a><span class="project-team-note">Built with classmates</span></div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image plant-system-preview" role="img"
+            aria-label="Plant Growth Monitor system overview: Pico sends sensor measurements via MQTT to a Python consumer, TimescaleDB and Grafana.">
+            <div class="plant-preview-content"><span class="section-kicker">Edge telemetry prototype</span><strong>From
+                plant to dashboard.</strong>
+              <div class="plant-flow"><span>Pico sensors</span><span aria-hidden="true">↓</span><span>MQTT · Python
+                  consumer</span><span aria-hidden="true">↓</span><span>TimescaleDB · Grafana</span></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-topline"><span>04 / Edge computing</span><span>Team project</span></div>
+            <h3>Plant Growth Monitor</h3>
+            <p>An edge-computing prototype built with classmates. A Pico measures moisture and distance, provides local
+              feedback and sends readings through MQTT to TimescaleDB and Grafana.</p>
+            <div class="tags"><span class="tag">MicroPython</span><span class="tag">MQTT</span><span
+                class="tag">TimescaleDB</span><span class="tag">Grafana</span><span class="tag">Docker Compose</span>
+            </div>
+            <div class="card-links"><a class="text-link" href="projects/plant-growth-monitor.html">Read case study
+                ↗</a><span class="project-team-note">Built with classmates</span></div>
+          </div>
+        </article>
+      </div>
+      <aside class="experiment career-workbench" aria-labelledby="career-coach-title">
+        <div>
+          <span class="section-kicker">On the workbench</span>
+          <h3 id="career-coach-title">AI Career Coach</h3>
+          <p>I'm building a full-stack career-coaching prototype with PDF CV uploads, structured AI feedback and
+            CV-to-job matching. The current code brings together a Next.js interface, a FastAPI backend and Supabase
+            integration.</p>
+          <div class="tags"><span class="tag">Next.js</span><span class="tag">FastAPI</span><span
+              class="tag">Supabase</span><span class="tag">OpenRouter</span></div>
+          <details class="workbench-details">
+            <summary>Inside the current build</summary>
+            <ul>
+              <li>Supabase sign-up, sign-in and PDF storage.</li>
+              <li>PDF text extraction and extraction-status tracking.</li>
+              <li>LLM-powered CV feedback and job-description comparison with structured responses.</li>
+            </ul>
+            <p>The project is still in development. The complete flow, access controls and response quality need further
+              validation.</p>
+          </details>
+        </div>
+        <span class="wip">● WORK IN PROGRESS</span>
+      </aside>
+    </section>
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-image about-illustration"><img src="assets/images/jonas-at-computer.png"
+            alt="Chibi illustration of Jonas concentrating on his work at a computer." width="1254" height="1254"
+            loading="lazy" decoding="async"></div>
+        <div class="about-copy"><span class="section-kicker">02 / A little about me</span>
+          <h2 id="about-title">Curious about everything<br>around the model.</h2>
+          <p>My path into tech started with web development. Today, I'm studying MLOps Engineering at Nackademin and
+            learning how to turn machine learning experiments into working systems.</p>
+          <p>I enjoy connecting the pieces: data, pipelines, APIs, containers and monitoring. Personal projects give me
+            a way to explore those connections and learn through practical problems.</p>
+          <p>My background in logistics has also taught me to value structure, traceability and collaboration — habits I
+            bring into my engineering work.</p>
+          <div class="timeline">
+            <div class="timeline-item"><small>2025 — present · Nackademin</small><strong>MLOps Engineer studies</strong>
+            </div>
+            <div class="timeline-item"><small>2022 — 2024 · Karlskoga folkhögskola</small><strong>Web
+                Development</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section container toolkit" id="tools" aria-labelledby="tools-title">
+      <span class="kicker">03 / My toolkit</span>
+      <h2 id="tools-title">The tools behind<br>my projects.</h2>
+      <p class="subtitle">From preparing data to serving predictions and exploring drift.</p>
+      <div class="flow" aria-label="ML workflow stages">
+        <button type="button" class="stage" disabled data-stage="prepare" aria-pressed="true">
+          <span class="step">01</span><span class="stage-title">Prepare</span>
+          <span class="stage-description">Prepare data and build reusable features.</span>
+          <span class="tools">
+            <span class="tool"><span class="tool-icon"><img src="assets/images/tools/python.svg"
+                  alt=""></span>Python</span>
+            <span class="tool"><span class="tool-icon"><img src="assets/images/tools/pandas.svg"
+                  alt=""></span>Pandas</span>
+            <span class="tool"><span class="tool-icon"><img src="assets/images/tools/numpy.svg"
+                  alt=""></span>NumPy</span>
+          </span>
+        </button>
+        <button type="button" class="stage" disabled data-stage="train" aria-pressed="false">
+          <span class="step">02</span><span class="stage-title">Train &amp; track</span>
+          <span class="stage-description">Train models and track experiments.</span>
+          <span class="tools">
+            <span class="tool"><span class="tool-icon"><img src="assets/images/tools/scikitlearn.svg"
+                  alt=""></span>scikit-learn</span>
+            <span class="tool"><span class="tool-icon"><img src="assets/images/tools/mlflow.svg"
+                  alt=""></span>MLflow</span>
+          </span>
+        </button>
+        <button type="button" class="stage" disabled data-stage="serve" aria-pressed="false">
+          <span class="step">03</span><span class="stage-title">Serve &amp; deliver</span>
+          <span class="stage-description">Serve predictions and package applications.</span>
+          <span class="tools">
+            <span class="tool"><span class="tool-icon"><img src="assets/images/tools/fastapi.svg"
+                  alt=""></span>FastAPI</span>
+            <span class="tool"><span class="tool-icon"><img src="assets/images/tools/docker.svg"
+                  alt=""></span>Docker</span>
+            <span class="tool"><span class="tool-icon"><img src="assets/images/tools/githubactions.svg"
+                  alt=""></span>GitHub Actions</span>
+          </span>
+        </button>
+        <button type="button" class="stage" disabled data-stage="monitor" aria-pressed="false">
+          <span class="step">04</span><span class="stage-title">Monitor</span>
+          <span class="stage-description">Explore drift and inspect prediction logs.</span>
+          <span class="tools">
+            <span class="tool"><span class="tool-icon"><svg viewBox="0 0 24 24" width="17" height="17" fill="none"
+                  stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg></span>Evidently</span>
+            <span class="tool"><span class="tool-icon"><img src="assets/images/tools/streamlit.svg"
+                  alt=""></span>Streamlit</span>
+          </span>
+        </button>
+      </div>
+      <div class="detail" aria-live="polite">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"
+          aria-hidden="true">
+          <circle cx="6" cy="5" r="2" />
+          <circle cx="6" cy="19" r="2" />
+          <circle cx="18" cy="5" r="2" />
+          <path d="M6 7v10M18 7c0 6-12 3-12 8" />
+        </svg>
+        <div><span class="detail-label">In my projects</span><span class="detail-text"
+            id="toolkit-stage-detail">Reusable feature engineering in Churn Predictor; synthetic transaction data and
+            feature building in Fraud Detection.</span></div>
+      </div>
+      <div class="studies">
+        <span class="studies-label">Also explored through my studies<br>Cloud &amp; infrastructure</span>
+        <div class="studies-tools">
+          <span class="tool"><span class="tool-icon"><img src="assets/images/tools/amazonwebservices.svg"
+                alt=""></span>AWS</span>
+          <span class="tool"><span class="tool-icon"><img src="assets/images/tools/microsoftazure.svg"
+                alt=""></span>Azure</span>
+          <span class="tool"><span class="tool-icon"><img src="assets/images/tools/linux.svg" alt=""></span>Linux</span>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section container" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        <div><span class="section-kicker">Let's connect</span>
+          <h2 id="contact-title">A place to learn.<br>A team to build with.</h2>
+        </div>
+        <div>
+          <p>I'm looking for an internship in MLOps, ML Engineering or AI Engineering from <strong>8 February to 21 May
+              2027</strong>.</p><a class="button button-primary" href="mailto:jonas.lg.johansson@gmail.com">Let's talk
+            <span aria-hidden="true">↗</span></a><br><a class="email-link"
+            href="mailto:jonas.lg.johansson@gmail.com">jonas.lg.johansson@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container footer-wrap"><span>© Jonas Johansson · Built with curiosity.</span>
+    <div class="footer-links"><a href="https://github.com/BigLurch" target="_blank" rel="noopener noreferrer">GitHub
+        ↗</a><a href="https://www.linkedin.com/in/jonas-johansson-1516921b8/" target="_blank"
+        rel="noopener noreferrer">LinkedIn ↗</a><a href="assets/documents/jonas-johansson-cv.pdf" download>CV ↓</a><a
+        href="#main">Back to top ↑</a></div>
+  </footer>
+</body>
+
+</html>
