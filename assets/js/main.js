@@ -40,34 +40,34 @@ document.querySelectorAll('[data-image]').forEach(slot => {
 
 // Toolkit: selecting a stage reveals its role in the actual projects.
 
-    (() => {
-      const root = document.getElementById('tools');
-      if (!root) return;
-      const detail = root.querySelector('#toolkit-stage-detail');
-      const buttons = root.querySelectorAll('[data-stage]');
-      const descriptions = {
-        prepare: 'Reusable feature engineering in Churn Predictor; synthetic transaction data and feature building in Fraud Detection.',
-        train: 'Logistic Regression in Churn Predictor and Random Forest in Fraud Detection, with MLflow tracking in both projects.',
-        serve: 'FastAPI inference in both projects; Docker packaging and GitHub Actions checks, with separate services in Fraud Detection.',
-        monitor: 'Evidently drift reporting and a Streamlit dashboard in Fraud Detection; script-based drift checks in Churn Predictor.'
-      };
-      let selectedStage = 'prepare';
-      function renderDetail() {
-        const text = descriptions[selectedStage];
-        detail.textContent = window.PortfolioI18n?.t(text) || text;
-      }
-      document.addEventListener('portfolio:languagechange', renderDetail);
+(() => {
+  const root = document.getElementById('tools');
+  if (!root) return;
+  const detail = root.querySelector('#toolkit-stage-detail');
+  const buttons = root.querySelectorAll('[data-stage]');
+  const descriptions = {
+    prepare: 'Reusable feature engineering in Churn Predictor; synthetic transaction data and feature building in Fraud Detection.',
+    train: 'Logistic Regression in Churn Predictor and Random Forest in Fraud Detection, with MLflow tracking in both projects.',
+    serve: 'FastAPI inference in both projects; Docker packaging and GitHub Actions checks, with separate services in Fraud Detection.',
+    monitor: 'Evidently drift reporting and a Streamlit dashboard in Fraud Detection; script-based drift checks in Churn Predictor.'
+  };
+  let selectedStage = 'prepare';
+  function renderDetail() {
+    const text = descriptions[selectedStage];
+    detail.textContent = window.PortfolioI18n?.t(text) || text;
+  }
+  document.addEventListener('portfolio:languagechange', renderDetail);
+  renderDetail();
+  buttons.forEach(button => {
+    button.disabled = false;
+    button.addEventListener('click', () => {
+      buttons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+      selectedStage = button.dataset.stage;
       renderDetail();
-      buttons.forEach(button => {
-        button.disabled = false;
-        button.addEventListener('click', () => {
-        buttons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
-        selectedStage = button.dataset.stage;
-        renderDetail();
-        });
-      });
-    })();
-  
+    });
+  });
+})();
+
 
 // Native project scrolling: touch/trackpad/scrollbar work without JavaScript.
 (() => {
