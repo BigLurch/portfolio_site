@@ -12,6 +12,10 @@ menuButton?.addEventListener('click', () => {
 });
 navigation?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
 document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') document.querySelectorAll('.cv-download[open]').forEach(menu => {
+    menu.open = false;
+    menu.querySelector('summary').focus();
+  });
   if (event.key === 'Escape' && menuButton?.getAttribute('aria-expanded') === 'true') {
     closeMenu();
     menuButton.focus();
@@ -22,7 +26,10 @@ window.matchMedia('(min-width: 761px)').addEventListener('change', closeMenu);
 // Missing optional files never create broken-image icons. The HTML fallback stays visible.
 document.querySelectorAll('[data-image]').forEach(slot => {
   const image = new Image();
-  image.alt = slot.dataset.alt || '';
+  const englishAlt = slot.classList.contains('portrait-slot') ? 'Portrait of Jonas Johansson' : (slot.dataset.alt || '');
+  const updateAlt = () => { image.alt = window.PortfolioI18n?.t(englishAlt) || englishAlt; };
+  updateAlt();
+  document.addEventListener('portfolio:languagechange', updateAlt);
   image.decoding = 'async';
   image.onload = () => {
     slot.append(image);
@@ -44,11 +51,19 @@ document.querySelectorAll('[data-image]').forEach(slot => {
         serve: 'FastAPI inference in both projects; Docker packaging and GitHub Actions checks, with separate services in Fraud Detection.',
         monitor: 'Evidently drift reporting and a Streamlit dashboard in Fraud Detection; script-based drift checks in Churn Predictor.'
       };
+      let selectedStage = 'prepare';
+      function renderDetail() {
+        const text = descriptions[selectedStage];
+        detail.textContent = window.PortfolioI18n?.t(text) || text;
+      }
+      document.addEventListener('portfolio:languagechange', renderDetail);
+      renderDetail();
       buttons.forEach(button => {
         button.disabled = false;
         button.addEventListener('click', () => {
         buttons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
-        detail.textContent = descriptions[button.dataset.stage];
+        selectedStage = button.dataset.stage;
+        renderDetail();
         });
       });
     })();
@@ -91,3 +106,10 @@ document.querySelectorAll('[data-image]').forEach(slot => {
   controls.hidden = false;
   update();
 })();
+
+// Close the CV chooser when a download is selected or focus moves outside.
+document.querySelectorAll('.cv-download').forEach(menu => {
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { menu.open = false; }));
+  document.addEventListener('click', event => { if (!menu.contains(event.target)) menu.open = false; });
+  menu.addEventListener('focusout', event => { if (!menu.contains(event.relatedTarget)) menu.open = false; });
+});

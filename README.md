@@ -1,77 +1,78 @@
 # Jonas Johansson — MLOps Portfolio
 
-En fristående, responsiv portfolio med Navy + Cyan. Allt innehåll på själva sidan är på engelska. Byggd med HTML, CSS och JavaScript. Inga npm-paket, byggsteg, externa typsnitt eller backend behövs.
+Responsiv portfolio i Navy + Cyan, byggd med HTML, CSS och JavaScript. Ingen installation, backend eller byggprocess behövs.
+
+## Språk och CV
+
+- Engelska är standard vid första besöket. EN/SV i sidhuvudet växlar hela sidan till svenska eller engelska, inklusive projektsidor, bildbeskrivningar och verktygsflödet.
+- Valet sparas i webbläsaren. `?lang=en` respektive `?lang=sv` kan användas för att länka till ett bestämt språk. Språkvalet följer även med länkarna mellan HTML-sidorna.
+- Utan JavaScript visas den engelska versionen. Båda CV-filerna kan fortfarande laddas ner.
+- **Download CV / Ladda ner CV** erbjuder båda språken. Sidfoten har också två separata CV-länkar.
+- `assets/documents/jonas-johansson-cv-en.pdf`: ditt bifogade engelska CV.
+- `assets/documents/jonas-johansson-cv-sv.pdf`: ditt tidigare svenska CV.
+- PDF-filerna är kopior av dina original, utan omskrivningar. Den äldre `jonas-johansson-cv.pdf` finns kvar för kompatibilitet men används inte av den nya menyn.
 
 ## Öppna sidan
 
-Öppna `index.html` i din webbläsare. Alla sidor fungerar även från disk. För en lokal webbserver, kör från projektmappen:
+Öppna `index.html` direkt i en webbläsare, eller kör från projektmappen:
 
 ```bash
 python -m http.server 8000
 ```
 
-Besök sedan `http://localhost:8000`.
+Besök `http://localhost:8000`.
 
-## Mappstruktur
+## Innehåll
 
-```text
-jonas-portfolio/
-├── index.html
-├── projects/
-│   ├── churn-predictor.html
-│   └── fraud-detection.html
-├── assets/
-│   ├── css/styles.css
-│   ├── js/main.js
-│   ├── documents/jonas-johansson-cv.pdf
-│   └── images/
-│       ├── favicon.svg
-│       └── README.md
-├── docs/
-│   └── DESIGN.md
-├── README.md
-├── .gitignore
-└── .nojekyll
-```
+Startsidan har fyra projekt i ett horisontellt scrollbart flöde, AI Career Coach som pågående projekt, About, ett interaktivt verktygsflöde och kontaktinformation. De fyra projekten har egna HTML-sidor under `projects/`.
 
-## Lägg till dina bilder
+`assets/css/styles.css` styr layout och färger. `assets/js/main.js` hanterar meny, porträtt, projektflöde och verktygsflöde. `assets/js/i18n.js` hanterar språkvalet och innehåller de svenska översättningarna.
 
-Spara dessa filer i `assets/images/`:
+## Redigera texter
 
-| Filnamn | Användning | Rekommenderad storlek |
-| --- | --- | --- |
-| `hero-portrait.webp` | Rund porträttyta i hero | 1200 × 1200 px |
-| `about-portrait.webp` | Bild i About | 1000 × 1250 px |
-| `churn-preview.webp` | Churn-kort och projektsida | 1600 × 1000 px |
-| `fraud-preview.webp` | Fraud-kort och projektsida | 1600 × 1000 px |
+Engelska originaltexter finns i HTML-filerna och, för verktygsflödet, i `main.js`. I `i18n.js` ligger varje engelsk text som nyckel med sin svenska översättning som värde. Ändrar du en engelsk text behöver du ändra motsvarande nyckel där också. Saknas en översättning visas originaltexten.
 
-Bilderna visas automatiskt när filerna finns. Saknade bilder lämnar reservlayouten synlig. Inga projektbilder är genererade eller inkluderade. JavaScript krävs för automatisk bildinläsning; navigation och innehåll fungerar utan JavaScript. Om du vill använda JPG/PNG, ändra `data-image` i HTML-filerna. Anpassa också `data-alt` så texten beskriver den faktiska bilden.
+Tekniknamn och projektnamn behålls på båda språken. Ändra kontakt- och profillänkar i alla fem HTML-filer om de uppdateras. För nya CV-versioner ersätter du respektive PDF med samma filnamn.
 
-Projektkort använder 16:10-format. Projektsidorna har en bredare bildyta och beskär samma bild med `object-fit: cover`. Välj bilder där det viktiga ligger centralt, eller ändra `object-position` / `.case-banner` i CSS. Porträttytorna beskär på samma sätt.
+## Bilder
 
-## Ändra innehållet
+Projektbilder och illustrationen vid datorn finns med. Ditt heroporträtt lägger du som `assets/images/hero-portrait.webp`. Fram tills bilden finns visas reservlayouten. Du kan ändra bildfilen via `data-image` i `index.html`. Porträttets alternativtext hanteras också i `i18n.js` och `main.js`.
 
-- Startsida: `index.html`.
-- Projekttexter: respektive HTML-fil i `projects/`.
-- Färger och layout: `assets/css/styles.css`. Färgerna finns i `:root` överst.
-- Meny och bildinläsning: `assets/js/main.js`.
-- CV: ersätt `assets/documents/jonas-johansson-cv.pdf` med en ny PDF med samma namn.
-- Kontakt-, GitHub- och LinkedIn-länkar finns direkt i HTML. Uppdatera i alla tre filer vid ändringar.
+## Uppdatera din befintliga hemsida
 
-Projektinnehållet bygger på ditt bifogade CV och de två projektarkiven. Inga erfarenhetssiffror, kundomdömen eller färdiga certifieringar har lagts till. Demo-URL:erna kommer från dina projekt; deras aktuella tillgänglighet är inte verifierad. PostgreSQL i Fraud beskrivs som ett konfigurationsval, inte automatisk failover.
+Den här ZIP-filen innehåller hela portfolion. Om du redan har egna ändringar eller ett heroporträtt på din dator ska du behålla dem när du uppdaterar.
 
-## Lägg i GitHub
+För enbart språk- och CV-uppdateringen ersätter du:
 
-Packa upp ZIP-filen och lägg **innehållet i `jonas-portfolio/`** i roten av ditt repo. Då ligger `index.html` direkt i repo-roten. Inkludera även `.nojekyll` och `.gitignore` (dolda filer). Inga Pythonprojekt, modellfiler, träningsdata eller inspirationsbilder ska laddas upp med portfolion.
+- `index.html` och de fyra HTML-filerna under `projects/`.
+- `assets/css/styles.css` och `assets/js/main.js`.
 
-Detta är statiska filer som kan publiceras på GitHub Pages eller annan statisk hosting. Relativa länkar gör att sidan fungerar även under en undermapp, till exempel ett GitHub-projektrepo. Ingen sida har publicerats och inget repo har skapats eller ändrats av denna leverans.
+Lägg dessutom till:
 
-## Före din lansering
+- `assets/js/i18n.js`.
+- `assets/documents/jonas-johansson-cv-en.pdf`.
+- `assets/documents/jonas-johansson-cv-sv.pdf`.
 
-1. Lägg in dina egna bilder och anpassa alternativtexterna.
-2. Kontrollera kontaktuppgifter och aktuellt CV. Den medföljande PDF:en innehåller även ditt telefonnummer.
-3. Öppna demo- och profillänkarna och kontrollera att du vill visa dem publikt.
-4. Testa sidan på mobil och dator.
-5. När du har en slutlig domän kan du lägga till absoluta canonical-URL:er och en sitemap. Sociala bildförhandsvisningar är inte skapade.
+## GitHub
 
-Se `docs/DESIGN.md` för designbeslut och `assets/images/README.md` för bildplatser.
+Lägg innehållet i `jonas-portfolio/` i repo-roten så att `index.html` ligger direkt där. Inkludera `.nojekyll` och `.gitignore`. Portfolion kan sedan hostas på GitHub Pages eller annan statisk hosting, även under en undermapp.
+
+Kontrollera sidan på mobil och dator och att dina demo- och profillänkar fungerar före lansering. Inget repo har ändrats och hemsidan har inte publicerats här.
+
+Kontrollerat i denna uppdatering: JavaScript-syntax, språkväxling i DOM-simulering, sparat språkval, språkparametrar, interna filreferenser, PDF-originalens byteinnehåll och ZIP-integritet. Visuell webbläsarkontroll kunde inte köras i denna miljö.
+
+## Uppdatering av gruppprojekten
+
+De två gruppprojekten har nu konkreta beskrivningar av Jonas bidrag, lärdomar och tidigare Azure-driftsättning på engelska och svenska. Azure-miljöerna är avstängda av kostnadsskäl. Fork-länkar och fler projektbilder har lagts till i den senaste uppdateringen. För denna uppdatering ändrades `index.html`, båda grupprojektsidorna, `assets/js/i18n.js` och `assets/css/styles.css`.
+
+## Projektbilder och fork-länkar
+
+Den senaste leveransen innehåller ett huvudfoto och sex galleribilder för Plant Growth Monitor, samt huvudbilden och tre galleribilder för Nordic Travel Chatbot. Gallerierna har svensk/engelsk bildtext, fullständiga alternativtexter och länkar till originalbildernas fulla storlek. De ligger i två kolumner på större skärmar och en kolumn på små skärmar.
+
+Båda projekten har länkar till Jonas fork-repon på startsidan och projektsidorna. Länkarna använder de exakta adresser Jonas skickade; publik tillgänglighet kunde inte verifieras i denna miljö.
+
+Projektbilderna ligger under `assets/images/projects/plant/` och `assets/images/projects/nordic/`. Bildernas innehåll är oförändrat; bara filnamnen har gjorts tydligare. Se `docs/PROJECT-GALLERIES.md` för urvalet.
+
+För att uppdatera en tidigare version ersätter du `index.html`, båda grupprojektsidorna, `assets/css/styles.css` och `assets/js/i18n.js` och lägger till hela `assets/images/projects/`.
+
+Kontrollerat: interna filreferenser, bilddimensioner, översättningar för bildtexter och alternativtexter, kopiornas byteinnehåll, JavaScript-syntax, språkväxling och ZIP-integritet. Visuell kontroll av själva hemsidan i webbläsare kunde inte köras här.

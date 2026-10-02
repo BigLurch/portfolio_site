@@ -15,6 +15,7 @@
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script>document.documentElement.classList.add('js')</script>
+  <script src="assets/js/i18n.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </head>
 
@@ -22,11 +23,20 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container nav-wrap"><a class="brand" href="#home" aria-label="Jonas Johansson — home"><span
-          class="monogram" aria-hidden="true">JJ.</span>JONAS JOHANSSON</a><button class="menu-toggle" type="button"
+          class="monogram" aria-hidden="true">JJ.</span>JONAS JOHANSSON</a>
+      <div class="language-switch" role="group" aria-label="Language" hidden><button type="button" data-language="en"
+          lang="en" aria-label="English" aria-pressed="true">EN</button><button type="button" data-language="sv"
+          lang="sv" aria-label="Svenska" aria-pressed="false">SV</button></div><button class="menu-toggle" type="button"
         aria-expanded="false" aria-controls="navigation">Menu</button>
       <nav class="nav-links" id="navigation" aria-label="Main navigation"><a href="#projects">Projects</a><a
-          href="#about">About</a><a href="#tools">Tools</a><a href="#contact">Contact</a><a class="nav-cv"
-          href="assets/documents/jonas-johansson-cv.pdf" download>Download CV ↓</a></nav>
+          href="#about">About</a><a href="#tools">Tools</a><a href="#contact">Contact</a>
+        <details class="cv-download">
+          <summary class="nav-cv">Download CV ↓</summary>
+          <div class="cv-options" aria-label="Choose CV language"><a href="assets/documents/jonas-johansson-cv-en.pdf"
+              hreflang="en" download>English CV</a><a href="assets/documents/jonas-johansson-cv-sv.pdf" hreflang="sv"
+              download>Swedish CV</a></div>
+        </details>
+      </nav>
     </div>
   </header>
   <main id="main">
@@ -130,18 +140,17 @@
             <div class="tags"><span class="tag">Pydantic-AI</span><span class="tag">FastAPI</span><span
                 class="tag">Streamlit</span><span class="tag">MLflow</span><span class="tag">Docker</span></div>
             <div class="card-links"><a class="text-link" href="projects/nordic-travel-chatbot.html">Read case study
-                ↗</a><span class="project-team-note">Built with classmates</span></div>
+                ↗</a><a href="https://github.com/BigLurch/llmops_fullstack_project" target="_blank"
+                rel="noopener noreferrer">My fork ↗</a><span class="project-team-note">My role: frontend, data &
+                Azure</span></div>
           </div>
         </article>
-        <article class="project-card">
-          <div class="project-image plant-system-preview" role="img"
-            aria-label="Plant Growth Monitor system overview: Pico sends sensor measurements via MQTT to a Python consumer, TimescaleDB and Grafana.">
-            <div class="plant-preview-content"><span class="section-kicker">Edge telemetry prototype</span><strong>From
-                plant to dashboard.</strong>
-              <div class="plant-flow"><span>Pico sensors</span><span aria-hidden="true">↓</span><span>MQTT · Python
-                  consumer</span><span aria-hidden="true">↓</span><span>TimescaleDB · Grafana</span></div>
-            </div>
-          </div>
+        <article class="project-card"><a class="project-image screenshot-frame"
+            href="assets/images/projects/plant/plant-prototype.jpg" target="_blank" rel="noopener noreferrer"><img
+              src="assets/images/projects/plant/plant-prototype.jpg"
+              alt="Plant Growth Monitor physical prototype with sensors, an OLED display and a potted plant."
+              width="2251" height="1865" loading="lazy" decoding="async"><span class="screenshot-hint"
+              aria-hidden="true">View screenshot ↗</span></a>
           <div class="project-info">
             <div class="project-topline"><span>04 / Edge computing</span><span>Team project</span></div>
             <h3>Plant Growth Monitor</h3>
@@ -151,7 +160,9 @@
                 class="tag">TimescaleDB</span><span class="tag">Grafana</span><span class="tag">Docker Compose</span>
             </div>
             <div class="card-links"><a class="text-link" href="projects/plant-growth-monitor.html">Read case study
-                ↗</a><span class="project-team-note">Built with classmates</span></div>
+                ↗</a><a href="https://github.com/BigLurch/Plant_Growth_Monitor" target="_blank"
+                rel="noopener noreferrer">My fork ↗</a><span class="project-team-note">My role: hardware & Azure</span>
+            </div>
           </div>
         </article>
       </div>
@@ -293,8 +304,9 @@
   <footer class="container footer-wrap"><span>© Jonas Johansson · Built with curiosity.</span>
     <div class="footer-links"><a href="https://github.com/BigLurch" target="_blank" rel="noopener noreferrer">GitHub
         ↗</a><a href="https://www.linkedin.com/in/jonas-johansson-1516921b8/" target="_blank"
-        rel="noopener noreferrer">LinkedIn ↗</a><a href="assets/documents/jonas-johansson-cv.pdf" download>CV ↓</a><a
-        href="#main">Back to top ↑</a></div>
+        rel="noopener noreferrer">LinkedIn ↗</a><a href="assets/documents/jonas-johansson-cv-en.pdf" lang="en"
+        hreflang="en" download>CV · English ↓</a><a href="assets/documents/jonas-johansson-cv-sv.pdf" lang="sv"
+        hreflang="sv" download>CV · Svenska ↓</a><a href="#main">Back to top ↑</a></div>
   </footer>
 </body>
 
