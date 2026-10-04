@@ -1,4 +1,4 @@
-# AI Career Coach — nuläge
+# AI Career Coach - nuläge
 
 Underlag: ai_career_coach-main.zip från användaren. Granskning av källkod och struktur; inga externa API-anrop, ingen databasåtkomst och ingen verifierad körning av projektet. Supabase-projektets faktiska tabeller, policies och driftsättning har inte inspekterats.
 

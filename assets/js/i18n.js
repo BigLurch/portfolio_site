@@ -1,10 +1,11 @@
 // Explicit translation keys keep Swedish independent of HTML wording and whitespace.
 (() => {
   'use strict';
+
   const messages = {
     "text_d3224117be44": {
-      "en": "Jonas Johansson — MLOps Portfolio",
-      "sv": "Jonas Johansson — MLOps-portfölj"
+      "en": "Jonas Johansson - MLOps Portfolio",
+      "sv": "Jonas Johansson - MLOps-portfölj"
     },
     "text_2d0f6f3381c2": {
       "en": "MLOps Engineer student in Stockholm. Explore my personal ML projects and get in touch about an internship in spring 2027.",
@@ -15,8 +16,8 @@
       "sv": "Hoppa till innehållet"
     },
     "text_7cbac3f42b3f": {
-      "en": "Jonas Johansson — home",
-      "sv": "Jonas Johansson — startsida"
+      "en": "Jonas Johansson - home",
+      "sv": "Jonas Johansson - startsida"
     },
     "text_89b86ab0e66f": {
       "en": "Language",
@@ -87,8 +88,8 @@
       "sv": "Studerar till MLOps Engineer på Nackademin."
     },
     "text_d5705d979bd7": {
-      "en": "I enjoy the engineering around the model — from training and experiment tracking to deployment and monitoring.",
-      "sv": "Jag gillar tekniken runt modellen — från träning och experimentspårning till driftsättning och övervakning."
+      "en": "I'm studying MLOps Engineering at Nackademin and enjoy the technology surrounding models - from training and experiment tracking to deployment and monitoring. I'm looking for a spring 2027 internship (LIA) where I can work with real ML/AI systems and contribute across the full pipeline, from data to production.",
+      "sv": "Jag studerar till MLOps Engineer på Nackademin och gillar tekniken runt modellerna - från träning och experimentspårning till driftsättning och övervakning. Jag söker LIA våren 2027 där jag kan arbeta med verkliga ML-/AI-system och bidra genom hela kedjan, från data till produktion."
     },
     "text_706276562a90": {
       "en": "Explore my work",
@@ -143,8 +144,8 @@
       "sv": "LIA-period"
     },
     "text_d91adf138d56": {
-      "en": "08 Feb — 21 May 2027",
-      "sv": "8 feb — 21 maj 2027"
+      "en": "08 Feb - 21 May 2027",
+      "sv": "8 feb - 21 maj 2027"
     },
     "text_2e972b629611": {
       "en": "01 / Selected work",
@@ -159,8 +160,8 @@
       "sv": "början."
     },
     "text_8c436a259829": {
-      "en": "Independent projects and collaborations with classmates — exploring ML delivery, LLMOps and edge computing.",
-      "sv": "Egna projekt och samarbeten med klasskamrater — med fokus på ML-leverans, LLMOps och edge computing."
+      "en": "Independent projects and collaborations with classmates - exploring ML delivery, LLMOps and edge computing.",
+      "sv": "Egna projekt och samarbeten med klasskamrater - med fokus på ML-leverans, LLMOps och edge computing."
     },
     "text_f54d1282264c": {
       "en": "4 projects · Swipe or scroll to explore",
@@ -339,12 +340,12 @@
       "sv": "Jag gillar att koppla ihop delarna: data, pipelines, API:er, containrar och övervakning. Egna projekt ger mig möjlighet att utforska sambanden och lära mig genom praktiska problem."
     },
     "text_bcf3998c6747": {
-      "en": "My background in logistics has also taught me to value structure, traceability and collaboration — habits I bring into my engineering work.",
-      "sv": "Min bakgrund inom logistik har också lärt mig att värdesätta struktur, spårbarhet och samarbete — erfarenheter jag tar med mig i mitt tekniska arbete."
+      "en": "My background in logistics has also taught me to value structure, traceability and collaboration - habits I bring into my engineering work.",
+      "sv": "Min bakgrund inom logistik har också lärt mig att värdesätta struktur, spårbarhet och samarbete - erfarenheter jag tar med mig i mitt tekniska arbete."
     },
     "text_59728720986b": {
-      "en": "2025 — present · Nackademin",
-      "sv": "2025 — pågående · Nackademin"
+      "en": "2025 - present · Nackademin",
+      "sv": "2025 - pågående · Nackademin"
     },
     "text_95beafef5963": {
       "en": "MLOps Engineer studies",
@@ -431,8 +432,8 @@
       "sv": "Ett team att bygga med."
     },
     "text_4feba9812839": {
-      "en": "I'm looking for an internship in MLOps, ML Engineering or AI Engineering from",
-      "sv": "Jag söker LIA inom MLOps, ML Engineering eller AI Engineering från"
+      "en": "I am seeking an internship (LIA) in ML/MLOps for the spring of 2027, where I can contribute skills in Python, APIs, containerization, model pipelines, and AI applications while growing alongside an experienced team.",
+      "sv": "Jag söker LIA inom ML/MLOps våren 2027, där jag kan bidra med kunskaper i Python, API:er, containerisering, modellpipelines och AI-applikationer samtidigt som jag utvecklas tillsammans med ett erfaret team."
     },
     "text_a9c94f428329": {
       "en": "8 February to 21 May 2027",
@@ -459,8 +460,8 @@
       "sv": "Till toppen ↑"
     },
     "text_1e1ed7c0e12d": {
-      "en": "Taking a machine learning model beyond the notebook — into an API, a container and a web application.",
-      "sv": "En maskininlärningsmodell bortom notebooken — till ett API, en container och en webbapplikation."
+      "en": "Taking a machine learning model beyond the notebook - into an API, a container and a web application.",
+      "sv": "En maskininlärningsmodell bortom notebooken - till ett API, en container och en webbapplikation."
     },
     "text_3e73e0821906": {
       "en": "← Back to selected work",
@@ -523,8 +524,8 @@
       "sv": "Syntetiska data"
     },
     "text_e9db1f9658e6": {
-      "en": "Customer Churn Predictor — interface before generating sample customers.",
-      "sv": "Customer Churn Predictor — gränssnittet innan exempelkunder har genererats."
+      "en": "Customer Churn Predictor - interface before generating sample customers.",
+      "sv": "Customer Churn Predictor - gränssnittet innan exempelkunder har genererats."
     },
     "text_884e78c82403": {
       "en": "View full-size screenshot ↗",
@@ -675,8 +676,8 @@
       "sv": "Tjänster och ML-övervakning"
     },
     "text_a4c26035624c": {
-      "en": "Fraud Detection Platform — dashboard with simulated transaction data, map and prediction logs.",
-      "sv": "Fraud Detection Platform — dashboard med simulerade transaktioner, karta och prediktionsloggar."
+      "en": "Fraud Detection Platform - dashboard with simulated transaction data, map and prediction logs.",
+      "sv": "Fraud Detection Platform - dashboard med simulerade transaktioner, karta och prediktionsloggar."
     },
     "text_fd7365d1d128": {
       "en": "I built a production-style fraud detection platform to explore what happens around an ML service after deployment. Synthetic transactions are scored through an API, stored as prediction logs and presented in a dashboard.",
@@ -1039,8 +1040,8 @@
       "sv": "Nästa grupprojekt"
     },
     "text_4b30b4bc3738": {
-      "en": "Connecting measurements at the plant to a data pipeline — with local feedback, MQTT messaging and historical readings.",
-      "sv": "Från mätningar vid växten till en datapipeline — med lokal återkoppling, MQTT-meddelanden och historiska mätvärden."
+      "en": "Connecting measurements at the plant to a data pipeline - with local feedback, MQTT messaging and historical readings.",
+      "sv": "Från mätningar vid växten till en datapipeline - med lokal återkoppling, MQTT-meddelanden och historiska mätvärden."
     },
     "text_bef13d1a8b35": {
       "en": "04 / Edge computing & team collaboration",
@@ -1259,68 +1260,159 @@
       "sv": "Rapporter om datadrift från Evidently och en Streamlit-dashboard i Fraud Detection samt skriptbaserade driftkontroller i Churn Predictor."
     }
   };
+
   const normalize = text => text.replace(/\s+/g, ' ').trim();
-  const byEnglish = new Map(Object.values(messages).map(message => [normalize(message.en), message]));
+
+  const byEnglish = new Map(
+    Object.values(messages).map(message => [
+      normalize(message.en),
+      message
+    ])
+  );
+
   let language = 'en';
-  // Merge adjacent text fragments (for example around HTML entities).
+
+  // Merge adjacent text fragments, for example around HTML entities.
   document.documentElement.normalize();
+
   const textTargets = [];
   const attributeTargets = [];
+
   document.querySelectorAll('[data-i18n-text]').forEach(element => {
     const keys = JSON.parse(element.dataset.i18nText);
-    const nodes = [...element.childNodes].filter(node => node.nodeType === 3 && node.textContent.trim());
+
+    const nodes = [...element.childNodes].filter(
+      node => node.nodeType === 3 && node.textContent.trim()
+    );
+
     keys.forEach((key, index) => {
-      if (key && nodes[index]) textTargets.push({ element, index, key, original: nodes[index].textContent });
+      if (key && nodes[index]) {
+        textTargets.push({
+          element,
+          index,
+          key,
+          original: nodes[index].textContent
+        });
+      }
     });
   });
+
   document.querySelectorAll('[data-i18n-attrs]').forEach(element => {
     const keys = JSON.parse(element.dataset.i18nAttrs);
+
     Object.entries(keys).forEach(([attribute, key]) => {
-      attributeTargets.push({ element, attribute, key, original: element.getAttribute(attribute) });
+      attributeTargets.push({
+        element,
+        attribute,
+        key,
+        original: element.getAttribute(attribute)
+      });
     });
   });
+
   const pageLinks = [...document.querySelectorAll('a[href]')].filter(link => {
     const href = link.getAttribute('href');
-    return !/^(?:[a-z]+:|\/\/)/i.test(href) && /\.html(?:[?#]|$)/.test(href);
+
+    return (
+      !/^(?:[a-z]+:|\/\/)/i.test(href) &&
+      /\.html(?:[?#]|$)/.test(href)
+    );
   });
+
   function t(text) {
-    return language === 'sv' ? (byEnglish.get(normalize(text))?.sv ?? text) : text;
+    return language === 'sv'
+      ? (byEnglish.get(normalize(text))?.sv ?? text)
+      : text;
   }
+
   function apply(nextLanguage) {
     language = nextLanguage === 'sv' ? 'sv' : 'en';
+
     document.documentElement.lang = language;
+
     textTargets.forEach(({ element, index, key, original }) => {
-      const node = [...element.childNodes].filter(node => node.nodeType === 3 && node.textContent.trim())[index];
+      const node = [...element.childNodes].filter(
+        node => node.nodeType === 3 && node.textContent.trim()
+      )[index];
+
       if (!node) return;
-      node.textContent = language === 'en' ? original : original.replace(/\S[\s\S]*\S|\S/, messages[key].sv);
+
+      node.textContent = language === 'en'
+        ? original
+        : original.replace(/\S[\s\S]*\S|\S/, messages[key].sv);
     });
+
     attributeTargets.forEach(({ element, attribute, key, original }) => {
-      element.setAttribute(attribute, language === 'en' ? original : messages[key].sv);
+      element.setAttribute(
+        attribute,
+        language === 'en' ? original : messages[key].sv
+      );
     });
+
     document.querySelectorAll('[data-language]').forEach(button => {
-      button.setAttribute('aria-pressed', String(button.dataset.language === language));
+      button.setAttribute(
+        'aria-pressed',
+        String(button.dataset.language === language)
+      );
     });
+
     pageLinks.forEach(link => {
       const url = new URL(link.getAttribute('href'), document.baseURI);
+
       url.searchParams.set('lang', language);
       link.setAttribute('href', url.href);
     });
+
     try {
       const url = new URL(window.location.href);
+
       url.searchParams.set('lang', language);
       window.history.replaceState(null, '', url.href);
-    } catch (_) { /* Local-file previews may restrict history updates. */ }
-    try { window.localStorage.setItem('portfolio-language', language); } catch (_) { /* Storage may be restricted. */ }
-    document.dispatchEvent(new CustomEvent('portfolio:languagechange', { detail: { language } }));
+    } catch (_) {
+      // Local-file previews may restrict history updates.
+    }
+
+    try {
+      window.localStorage.setItem('portfolio-language', language);
+    } catch (_) {
+      // Storage may be restricted.
+    }
+
+    document.dispatchEvent(
+      new CustomEvent('portfolio:languagechange', {
+        detail: { language }
+      })
+    );
   }
-  let initial = new URLSearchParams(window.location.search).get('lang');
+
+  let initial = new URLSearchParams(
+    window.location.search
+  ).get('lang');
+
   if (initial !== 'en' && initial !== 'sv') {
-    try { initial = window.localStorage.getItem('portfolio-language'); } catch (_) { initial = 'en'; }
+    try {
+      initial = window.localStorage.getItem('portfolio-language');
+    } catch (_) {
+      initial = 'en';
+    }
   }
-  window.PortfolioI18n = { t, get language() { return language; } };
+
+  window.PortfolioI18n = {
+    t,
+    get language() {
+      return language;
+    }
+  };
+
   document.querySelectorAll('[data-language]').forEach(button => {
-    button.addEventListener('click', () => apply(button.dataset.language));
+    button.addEventListener('click', () => {
+      apply(button.dataset.language);
+    });
   });
+
   apply(initial);
-  document.querySelectorAll('.language-switch').forEach(control => { control.hidden = false; });
+
+  document.querySelectorAll('.language-switch').forEach(control => {
+    control.hidden = false;
+  });
 })();

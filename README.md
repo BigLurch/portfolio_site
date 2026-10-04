@@ -1,4 +1,4 @@
-# Jonas Johansson — MLOps Portfolio
+# Jonas Johansson - MLOps Portfolio
 
 Responsiv portfolio i Navy + Cyan, byggd med HTML, CSS och JavaScript. Ingen installation, backend eller byggprocess behövs.
 
