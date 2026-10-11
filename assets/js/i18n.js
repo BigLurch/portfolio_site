@@ -283,38 +283,27 @@
       "en": "My role: hardware & Azure",
       "sv": "Min roll: hårdvara och Azure"
     },
+
     "text_6ee48cf1209a": {
-      "en": "On the workbench",
-      "sv": "Under utveckling"
+      "en": "Current focus",
+      "sv": "Aktuellt fokus"
     },
+
     "text_6b9a56af651a": {
-      "en": "I'm building a full-stack career-coaching prototype with PDF CV uploads, structured AI feedback and CV-to-job matching. The current code brings together a Next.js interface, a FastAPI backend and Supabase integration.",
-      "sv": "Jag bygger en fullstackprototyp för karriärcoachning med uppladdning av CV i PDF-format, strukturerad AI-feedback och matchning mellan CV och jobb. Koden kombinerar ett Next.js-gränssnitt, en FastAPI-backend och integration med Supabase."
+      "en": "I'm currently preparing for the AWS Certified Machine Learning Engineer - Associate (MLA-C02) certification to deepen my knowledge of building, deploying and operating machine learning solutions on AWS.",
+      "sv": "Jag förbereder mig just nu inför certifieringen AWS Certified Machine Learning Engineer - Associate (MLA-C02) för att fördjupa mina kunskaper inom utveckling, driftsättning och hantering av maskininlärningslösningar på AWS."
     },
+
     "text_253e2fae5d6a": {
-      "en": "Inside the current build",
-      "sv": "I den nuvarande versionen"
+      "en": "Target: Q1 2027",
+      "sv": "Målsättning: första kvartalet 2027"
     },
-    "text_d106b8ce1d7d": {
-      "en": "Supabase sign-up, sign-in and PDF storage.",
-      "sv": "Registrering, inloggning och PDF-lagring i Supabase."
-    },
-    "text_296944ec1f6c": {
-      "en": "PDF text extraction and extraction-status tracking.",
-      "sv": "Textextraktion från PDF och spårning av extraktionsstatus."
-    },
-    "text_1278fca0c30b": {
-      "en": "LLM-powered CV feedback and job-description comparison with structured responses.",
-      "sv": "LLM-baserad CV-feedback och jämförelse med jobbannonser med strukturerade svar."
-    },
-    "text_c7bcd5a9fc91": {
-      "en": "The project is still in development. The complete flow, access controls and response quality need further validation.",
-      "sv": "Projektet är fortfarande under utveckling. Hela flödet, åtkomstkontrollerna och svarens kvalitet behöver valideras ytterligare."
-    },
+
     "text_c55d93907197": {
-      "en": "● WORK IN PROGRESS",
-      "sv": "● UNDER UTVECKLING"
+      "en": "PREPARATION IN PROGRESS",
+      "sv": "CERTIFIERINGSFÖRBEREDELSER PÅGÅR"
     },
+
     "text_52f02454fe30": {
       "en": "Chibi illustration of Jonas concentrating on his work at a computer.",
       "sv": "Chibiillustration av Jonas som arbetar koncentrerat vid en dator."
