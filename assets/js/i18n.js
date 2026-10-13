@@ -139,10 +139,22 @@
       "en": "MLOps Engineer · Nackademin",
       "sv": "MLOps-utbildning · Nackademin"
     },
+
     "text_9fa6b67345fc": {
-      "en": "Internship period",
-      "sv": "LIA-period"
+      "en": "Internship periods",
+      "sv": "LIA-perioder"
     },
+
+    "lia_period_1": {
+      "en": "LIA 1: 08 Feb - 21 May 2027",
+      "sv": "LIA 1: 8 feb - 21 maj 2027"
+    },
+
+    "lia_period_2": {
+      "en": "LIA 2: 23 Aug - 31 Dec 2027",
+      "sv": "LIA 2: 23 aug - 31 dec 2027"
+    },
+
     "text_d91adf138d56": {
       "en": "08 Feb - 21 May 2027",
       "sv": "8 feb - 21 maj 2027"

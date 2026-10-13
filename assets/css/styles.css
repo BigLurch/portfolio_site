@@ -1,7 +1,8 @@
 /* Navy + Cyan. Shared tokens for every page. */
 :root {
     /* Typography - Major Third (1.250), with 1rem = 16px */
-    --text-2xs: 0.64rem; /* 10.24px - decorative meta labels */
+    --text-2xs: 0.64rem;
+    /* 10.24px - decorative meta labels */
     --text-xs: 0.8rem;
     --text-base: 1rem;
     --text-lg: 1.25rem;
@@ -2440,4 +2441,30 @@ p {
 
 .gallery-card:last-child:nth-child(odd) {
     grid-column: 1/-1
+}
+
+
+.internship-dates {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.internship-dates strong {
+    display: block;
+    font-size: var(--text-xs);
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--text);
+}
+
+@media (max-width: 760px) {
+    .hero-meta .internship-periods {
+        align-items: flex-start;
+    }
+
+    .internship-dates {
+        align-items: flex-end;
+        text-align: right;
+    }
 }
